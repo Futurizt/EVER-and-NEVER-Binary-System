@@ -24,13 +24,13 @@ $$
   \end{cases}
 $$
 
-where P (v ⋳ V)  is the empirical probability that some random vi from the current price set lies in the interval V. So $$1 - P (v_i > v) ⟶1$$ with v -> “_max given number_” and the same way $$1 - P (v_i < v) ⟶ 1$$ with v ⟶ “min given number”. $$v_{25}$$ and $$v_{75}$$ correspond to the edges of the honesty interval defined above. The iterative relation $$r’ = r*(1-a) + a*r_c$$ accumulate “errorness” of the feed with some rate a. The rate can be understood if we suggest  the constant values i.e.
+where P (v ⋳ V)  is the empirical probability that some random vi from the current price set lies in the interval V. So $$1 - P (v_i > v) \to 1$$ with v -> “_max given number_” and the same way $$1 - P (v_i < v) \to 1$$ with v ⟶ “min given number”. $$v_{25}$$ and $$v_{75}$$ correspond to the edges of the honesty interval defined above. The iterative relation $$r’ = r*(1-a) + a*r_c$$ accumulate “errorness” of the feed with some rate a. The rate can be understood if we suggest  the constant values i.e.
 
 $$
 \begin{cases}
     r_0 = 0 \\
     r_{n+1} = r_n*(1-a) + r_c*a \\
-    r_n ⟶ r_c \text { if } n ⟶ ∞
+    r_n \to r_c \text { if } n \to \infty
   \end{cases}
 $$
 
